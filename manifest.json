@@ -1,0 +1,11 @@
+{
+  "name": "Extend Your Horizons",
+  "version": "0.01",
+  "description": "A tool for productivity and wellness. Access a pomodoro timer, make a todo list, block distracting sites and get a random self-care tip!",
+  "browser_action": {
+    "default_title": "Extend Your Horizons",
+    "default_popup": "popout.html"
+  },
+  "manifest_version": 2
+}
+

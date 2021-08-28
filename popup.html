@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script> -->
+
+    <title>Extend Your Horizons: Todo List</title>
+    <style>
+      body {
+        width: 300px;
+      }
+      .todo-items,
+      .todo-items li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .todo-items li{
+        padding: 10px;
+        border-bottom: 2px solid orange;
+        display: flex;
+        justify-content: space-between
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <button class="mdc-button foo-button">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Button</span> -->
+
+    <img
+      src="images/logo.png"
+      alt="Expand Your Horizons Logo"
+      class="logo-icon"
+    />
+
+    <ul class="todo-items">
+      <li>Do math homework <span>✔</span> <span>🗑</span></li>
+      <li>Do math homework <span>✔</span> <span>🗑</span></li>
+      <li>Do math homework <span>✔</span> <span>🗑</span></li>
+    </ul>
+
+    <script src="popout.js"></script>
+  </body>
+</html>
