@@ -31,14 +31,15 @@
       .todo-items li {
         padding: 15px;
         border-bottom: 2px solid orange;
-        display: flex;
+        display: block;
         justify-content: space-between;
       }
       .todo-items li:hover{
         background: #fff9ee;
       }
-      .todo-items .done .item{
+      .todo-items li .done {
         display: flex;
+        text-align: center;
         margin-left: 0px;
         margin-right: 15px;
       }
@@ -79,16 +80,19 @@
     <h2 class="todo-title">To-Do List</h2>
     <ul class="todo-items">
       <li class="done">
-        <span class="item">Do math homeworasdfsdfdsck</span>
-        <div><span>✔</span> <span>🗑</span></div>
+        <div><span>✔</span>
+          <span class="item">Do math homeworasdfsdfdsck</span>  
+        <span>🗑</span></div>
       </li>
+
       <li class="done">
-        <span class="item">Help with dinner</span>
-        <div><span>✔</span> <span>🗑</span></div>
+        <div><span>✔</span>
+          <span class="item">Help with dinner</span>
+        <span>🗑</span></div>
       </li>
+
       <li class="done">
-        <span class="item">Walk the dog</span>
-        <div><span>✔</span> <span>🗑</span></div>
+        <div><span>✔</span> <span class="item">Walk the dog</span> <span>🗑</span></div>
       </li>
     </ul>
     <img src="../images/logo.png" alt="Extend Your Horizons Logo" style="width:270px;">
