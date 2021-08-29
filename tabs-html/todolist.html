@@ -24,6 +24,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        display: block;
       }
       .todo-items li {
         padding: 10px;
@@ -31,26 +32,35 @@
         display: flex;
         justify-content: space-between;
       }
-      .navbar {
-        display: inline;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        list-style-type: none;
-        background-color: #fff9ee;
-      }
-      .nav-item {
-        justify-content: center;
-      }
-      .nav-items a {
-        display: inline-block;
-        color: #000000;
-        text-decoration: none;
-      }
     </style>
   </head>
   <body>
     <ul class="todo-items">
+</head>
+<body>
+  <div style="display: flex; justify-content: center; align-items:center; flex-direction: column;">
+        
+    <div class="wrapper">
+        <ul class="navbar">
+          <div class="nav-item">
+            <li><a href="./pomodoro.html"><img src="./../icons/pomodoro.png" /></a></li>
+          </div>
+  
+          <div class="nav-item">
+            <li><a href="./todolist.html"><img src="./../icons/todo-active.png" /></a></li>
+          </div>
+  
+          <div class="nav-item">
+            <li><a href="./block.html"><img src="./../icons/block.png" /></a></li>
+          </div>
+  
+          <div class="nav-item">
+            <li><a href="./quotes.html"><img src="./../icons/quotes.png" /></a></li>
+          </div>
+        </ul>
+      </div> 
+  </div>
+  <ul class="todo-items">
       <li>
         Do math homework
         <div><span>✔</span> <span>🗑</span></div>
