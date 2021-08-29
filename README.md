@@ -5,5 +5,5 @@ Extend Your Horizons is a comprehensive Google Chrome extension that simultaneou
 How to install
 1️⃣ Clone the repository on your machine.
 2️⃣ Go to Extensions Manager on Google Chrome and toggle on the Developer Mode.
-3️⃣ Click on Load unpacked and select the technova-hackathon folder.
-4️⃣ The extension is now ready to use.
+3️⃣ Click on "load unpacked" and select the technova-hackathon folder.
+4️⃣ Select the extension, pin it if you would like and click to use!
