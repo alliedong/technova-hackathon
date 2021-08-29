@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open+Sans"
       type="text/css"
@@ -15,10 +15,13 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
-    <link rel="stylesheet" href="./../css/popup.css" />
+    <link
+    rel="stylesheet"
+    href="./../css/popup.css"
+  />
 
-    <title>Inspirational Quote</title>
-    <style>
+  <title>Inspirational Quote</title>
+  <style>
       body {
         width: 300px;
       }
@@ -34,49 +37,31 @@
         border-bottom: 2px solid orange;
       }
     </style>
-  </head>
-  <body>
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      "
-    >
-      <div class="wrapper">
-        <ul class="navbar">
-          <div class="nav-item">
-            <li>
-              <a href="./pomodoro.html"
-                ><img src="./../icons/pomodoro.png"
-              /></a>
-            </li>
-          </div>
-
-          <div class="nav-item">
-            <li>
-              <a href="./todolist.html"><img src="./../icons/todo.png" /></a>
-            </li>
-          </div>
-
-          <div class="nav-item">
-            <li>
-              <a href="./block.html"><img src="./../icons/block.png" /></a>
-            </li>
-          </div>
-
-          <div class="nav-item">
-            <li>
-              <a href="./quotes.html"
-                ><img src="./../icons/quotes-active.png"
-              /></a>
-            </li>
-          </div>
-        </ul>
-      </div>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items:center; flex-direction: column;">
+        
+        <div class="wrapper">
+            <ul class="navbar">
+              <div class="nav-item">
+                <li><a href="./pomodoro.html"><img src="./../icons/pomodoro.png" /></a></li>
+              </div>
+      
+              <div class="nav-item">
+                <li><a href="./todolist.html"><img src="./../icons/todo.png" /></a></li>
+              </div>
+      
+              <div class="nav-item">
+                <li><a href="./block.html"><img src="./../icons/block.png" /></a></li>
+              </div>
+      
+              <div class="nav-item">
+                <li><a href="./quotes.html"><img src="./../icons/quotes-active.png" /></a></li>
+              </div>
+            </ul>
+          </div> 
     </div>
-    <li class="quote">Inspirational Quote</li>
+    <li class="quote" id="randomQuote"></li>
     <script src="./../js/quotes.js"></script>
   </body>
 </html>
