@@ -28,8 +28,12 @@ function addMessageListeners() {
             if (request.command === "updateTime") {
                 var min = request.minutes
                 var sec = request.seconds
+                if (min <= 0 && sec <= 0) {
+                start()
+                } else {
                 document.getElementById("minutes").innerText = min;
                 document.getElementById("seconds").innerText = sec;
+                }
             }
         })
 }
