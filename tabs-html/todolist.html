@@ -33,22 +33,27 @@
         border-bottom: 2px solid orange;
         display: block;
         justify-content: space-between;
+        margin: auto;
       }
       .todo-items li:hover{
         background: #fff9ee;
       }
-      .todo-items li .done {
+      .todo-items li.done {
         display: flex;
         text-align: center;
-        margin-left: 0px;
-        margin-right: 15px;
+        /* margin-left: 0px;
+        margin-right: 15px; */
+        margin: auto;
       }
-      .todo-items li:done .item{
+      
+      .todo-items li.done .item{
         text-decoration: line-through;
       }
       .todo-title {
         padding-bottom:10px;
+        padding-right: 145px;
       }
+
     </style>
   </head>
   <body>
@@ -78,21 +83,30 @@
         </ul>
     </div>
     <h2 class="todo-title">To-Do List</h2>
+
+    <button class="create-todo">New Todo</button>
+    <div class="new-item">
+      <input type="text"/>
+      <button>Save</button>
+    </div>
+
     <ul class="todo-items">
       <li class="done">
         <div><span>✔</span>
-          <span class="item">Do math homeworasdfsdfdsck</span>  
+          <span class="item">Do math homework</span>  
         <span>🗑</span></div>
       </li>
 
-      <li class="done">
+      <li>
         <div><span>✔</span>
           <span class="item">Help with dinner</span>
         <span>🗑</span></div>
       </li>
 
-      <li class="done">
-        <div><span>✔</span> <span class="item">Walk the dog</span> <span>🗑</span></div>
+      <li>
+        <div><span>✔</span> 
+          <span class="item">Walk the dog</span> 
+        <span>🗑</span></div>
       </li>
     </ul>
     <img src="../images/logo.png" alt="Extend Your Horizons Logo" style="width:270px;">
