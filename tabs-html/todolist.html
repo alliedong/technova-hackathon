@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  <title>To Do List</title>
+  <style>
+      body {
+        width: 300px;
+      }
+      .todo-items,
+      .todo-items li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .todo-items li {
+        padding: 10px;
+        border-bottom: 2px solid orange;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navbar {
+        display: inline;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        list-style-type: none;
+        background-color: #fff9ee;
+      }
+      .nav-item {
+        justify-content: center;
+      }
+      .nav-items a {
+        display: inline-block;
+        color: #000000;
+        text-decoration: none;
+      }
+    </style>
+</head>
+<body>
+  <ul class="todo-items">
+      <li>
+        Do math homework
+        <div><span>✔</span> <span>🗑</span></div>
+      </li>
+      <li>
+        Do math homework
+        <div><span>✔</span> <span>🗑</span></div>
+      </li>
+      <li>
+        Do math homework
+        <div><span>✔</span> <span>🗑</span></div>
+      </li>
+    </ul>
+
+    <script src="popup.js"></script>
+</body>
+</html>

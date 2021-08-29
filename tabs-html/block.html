@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Blocker</title>
+    <link
+      rel="stylesheet"
+      href="./../css/popup.css"
+    />
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items:center; flex-direction: column;">
+        
+        <div class="wrapper">
+            <ul class="navbar">
+              <div class="nav-item">
+                <li><a href="./pomodoro.html"><img src="./../icons/pomodoro.png" /></a></li>
+              </div>
+      
+              <div class="nav-item">
+                <li><a href="./todolist.html"><img src="./../icons/todo.png" /></a></li>
+              </div>
+      
+              <div class="nav-item">
+                <li><a href="./block.html"><img src="./../icons/block-active.png" /></a></li>
+              </div>
+      
+              <div class="nav-item">
+                <li><a href="./quotes.html"><img src="./../icons/quotes.png" /></a></li>
+              </div>
+            </ul>
+          </div>
+
+        <textarea id="sites" rows="10" cols="30" spellcheck="false"></textarea>
+        <br>
+
+        <div>
+            <b>Enabled? </b><input id="chbx" type="checkbox" />
+        </div>
+        <br/>
+        <button id="submit">Save</button>
+        
+    </div>
+    <script src="./../js/block.js"></script>
+</body>
+</html>
