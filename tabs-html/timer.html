@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
-
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open+Sans"
@@ -23,16 +22,18 @@
       href="/css/popup.css"
     />
     <title>Extend Your Horizons</title>
+
     <style>
-        body {
-          width: 300px;
-        }
+
         .centered {
           position: absolute;
           top: 60%;
           left: 50%;
           transform: translate(-50%, -50%);
         }
+        body {
+        width: 300px;
+       }
 
         .container {
           position: relative;
@@ -44,46 +45,45 @@
           font-family: 'Teko', sans-serif;
           font-size: 3rem;
         }
-
-        .play {
-         width: 5rem;
-         height: 5rem;
-        }
-        h1, p  {
+        h1 , small {
             text-align: center;
         }
+
     </style>
-  </head>
-
-  <body>
+    <script src="https://kit.fontawesome.com/545d9a73bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
     <div class="wrapper">
-      <ul style="width: 16rem; margin:0; padding: 0;" >
+      <ul style="width: 16rem;">
         <div class="nav-item">
-          <li><a href="tabs-html/timer.html"><img src="icons/pomodoro-active.png" /></a></li>
+          <li><a href="timer.html"><img src="../icons/pomodoro-active.png" /></a></li>
         </div>
 
         <div class="nav-item">
-          <li><a href="tabs-html/todolist.html"><img src="icons/todo.png" /></a></li>
+          <li><a href="todolist.html"><img src="../icons/todo.png" /></a></li>
         </div>
 
         <div class="nav-item">
-          <li><a href="tabs-html/block.html"><img src="icons/block.png" /></a></li>
+          <li><a href="block.html"><img src="../icons/block.png" /></a></li>
         </div>
 
         <div class="nav-item">
-          <li><a href="tabs-html/quotes.html"><img src="icons/quotes.png" /></a></li>
+          <li><a href="quotes.html"><img src="../icons/quotes.png" /></a></li>
         </div>
       </ul>
-      <h1>Pomodoro</h1>
-    <p>Hit play to start the timer...</p>
-    <div class="container">
-        <img src="../images/tomato.png" style="width:100%;">
-        <div class="centered">
-            <a href="./tabs-html/timer.html"><img class="play" src="./icons/play_icon.jpg"></a>
+        <h1>Pomodoro</h1>
+        <div class="container">
+            <img src="../images/tomato.png" style="width: 100%;">
+            <div class="centered">
+                <h3 class="time"><span id="minutes">00</span> : <span id="seconds">00</span></h3>
+            </div>
         </div>
     </div>
-    </div>
-      <img src="../images/logo.png" alt="Extend Your Horizons Logo" style="width:270px; padding-left:25px;">
 
-  </body>
+
+<!--    <a href="timer.html"><button type="button">Go!</button></a>-->
+       <img src="../images/logo.png" alt="Extend Your Horizons Logo" style="width:270px; padding-left:25px;">
+
+    <script type="text/javascript" src="../js/popup.js"></script>
+</body>
 </html>

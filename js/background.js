@@ -29,3 +29,43 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
     }
   });
 });
+
+
+var currentState = "off";
+
+chrome.runtime.onMessage.addListener(
+    function(request, sender, sendResponse) {
+        if (request.command === "startTimer" && currentState === "off") {
+            startTimer(request.minutes, request.seconds);
+            sendResponse({message: "Timer Started"})
+        }
+    }
+)
+
+function startTimer(minutes, seconds) {
+    var min_int = setInterval(minutesTimer, 60000)
+    var sec_int = setInterval(secondsTimer, 1000)
+
+    function minutesTimer() {
+        minutes = minutes - 1;
+        updateTime(minutes, seconds)
+    }
+
+    function secondsTimer() {
+    seconds = seconds - 1;
+    if (seconds <= 0) {
+        seconds = 60
+    }
+    updateTime(minutes, seconds)
+    }
+
+
+    currentState = "pomodoro"
+}
+
+function updateTime(minutes, seconds) {
+    chrome.runtime.sendMessage({"command": "updateTime",
+                                "minutes": minutes,
+                                "seconds": seconds})
+}
+
