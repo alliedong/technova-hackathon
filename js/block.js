@@ -3,10 +3,13 @@ const submit = document.getElementById("submit");
 const chbx = document.getElementById("chbx");
 
 submit.addEventListener("click", () => {
-  const blocked = sites.value.split("\n").map(s => s.trim()).filter(Boolean);
+  const blocked = sites.value
+    .split("\n")
+    .map((s) => s.trim())
+    .filter(Boolean);
   chrome.storage.local.set({ blocked });
 
-  window.location.href="./../popup.html";
+  window.location.href = "./../popup.html";
 });
 
 chbx.addEventListener("change", (event) => {

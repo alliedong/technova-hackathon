@@ -2,14 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "DM Sans";
 }
 
 .wrapper {
-  margin: 2rem 2rem;
+  margin: 2rem 0;
 }
 
 .navbar {
   width: 20rem;
+}
+
+textarea {
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 13px;
+  margin-top: 0.5rem;
 }
 
 a {
@@ -25,4 +33,10 @@ ul {
 
 #submit {
   margin-bottom: 3rem;
+  padding: 0.5rem 2rem;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.8rem;
 }
