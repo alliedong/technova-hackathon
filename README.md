@@ -1,4 +1,6 @@
-# technova-hackathon
+# Technova Hackathon
+
+https://devpost.com/software/extend-your-horizons
 
 ## Extend Your Horizons
 
